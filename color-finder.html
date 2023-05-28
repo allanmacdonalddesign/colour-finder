@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Image Dominant Color Finder</title>
+  <link rel="stylesheet" href="color-finder.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.2/chroma.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script>
+</head>
+<body>
+  <div class="logo"></div>
+  <input id="search-input" type="text" placeholder="Search Google Colors">
+    <div id="drawer" class="drawer">
+      <button id="drawer-close">Close</button>
+      <div id="base-color-container"></div> <!-- New div for base color -->
+      <div id="color-scheme-options"> <!-- Wrap radio buttons in a new div -->
+          <label class="radio-button">
+            <input type="radio" name="colorScheme" id="complementary" value="complementary">
+            <span class="radio-button__indicator"></span>
+            Complementary
+          </label>
+          <label class="radio-button">
+            <input type="radio" name="colorScheme" id="monochromatic" value="monochromatic">
+            <span class="radio-button__indicator"></span>
+            Monochromatic
+          </label>
+          <label class="radio-button">
+            <input type="radio" name="colorScheme" id="analogous" value="analogous">
+            <span class="radio-button__indicator"></span>
+            Analogous
+          </label>
+          <label class="radio-button">
+            <input type="radio" name="colorScheme" id="triadic" value="triadic">
+            <span class="radio-button__indicator"></span>
+            Triadic
+          </label>
+          <label class="radio-button">
+            <input type="radio" name="colorScheme" id="split-complementary" value="split-complementary">
+            <span class="radio-button__indicator"></span>
+            Split Complementary
+          </label>
+      </div>
+      <div id="complementary-color-scheme"></div>
+    </div>
+  <div id="results-container"></div>
+   <script src="app.js" defer></script>
+</body>
+</html>

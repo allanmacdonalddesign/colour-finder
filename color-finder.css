@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.color-box {
+  position: relative;
+  width: 180px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.color-box div {
+  position: absolute;
+  margin-top: 0px !important;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+.color-box img {
+  position: absolute;
+}
+
+input {
+  background: url(./color-finder-images/search.png) top left no-repeat;
+  background-size: 20px 20px;
+  background-position: 15px 50%;
+  height: 25px;
+  padding-left: 40px !important;
+  width: 500px;
+}
+
+.logo {
+  background-image: url("./color-finder-images/google-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 177px;
+  width: 523px;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #dfe1e5;
+}
+
+/* New CSS */
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 300px;
+  background-color: #f5f5f5;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.drawer-open {
+  transform: translateX(0);
+}
+
+.selected-color-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.dominant-color-box {
+  width: 240px;
+  height: 160px;
+}
+
+
+.base-color-container{
+  padding:10px;
+}
+
+.base-color{
+  height: 80px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.complementary-color-container div{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.scheme-colors{
+  margin: 20px;
+}
+
+.scheme-colors div{
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-right: 15px; /* adjust as needed */
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+
+.radio-button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-button__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.radio-button:hover input ~ .radio-button__indicator {
+  background-color: #ccc;
+}
+
+.radio-button input:checked ~ .radio-button__indicator {
+  background-color: #2196F3;
+}
+
+.radio-button__indicator:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-button input:checked ~ .radio-button__indicator:after {
+  display: block;
+}
+
+.radio-button .radio-button__indicator:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
