@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-    const apiKey = 'AIzaSyDpExHj5sHv9ymM59FyvAcfMAFOD6zg3DA';
-    const cx = 'd1b64b6d5e05748cc';
+    const apiKey = 'your own Google API';
+    const cx = '';
 
     let currentColorScheme = 'complementary';
 
