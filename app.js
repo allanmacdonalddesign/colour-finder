@@ -2,9 +2,8 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-
-    const apiKey = 'your own Google API';
-    const cx = '';
+    const apiKey = 'your own google api';
+    const cx = 'your own google cx';
 
     let currentColorScheme = 'complementary';
 

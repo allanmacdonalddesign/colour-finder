@@ -74,6 +74,27 @@ input {
 
 /* New CSS */
 
+<<<<<<< HEAD
+=======
+
+#drawer-close {
+    font-size: 24px;
+    line-height: 24px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: right;
+}
+/* 
+#drawer-close:hover {
+  background-color: #eaeaea; 
+} */
+
+>>>>>>> ec43d04 (update)
 .drawer {
   position: fixed;
   top: 0;
@@ -109,7 +130,11 @@ input {
 }
 
 .base-color{
+<<<<<<< HEAD
   height: 80px;
+=======
+  height: 25px;
+>>>>>>> ec43d04 (update)
   margin: 20px;
   border-radius: 10px;
 }
@@ -126,6 +151,7 @@ input {
 
 .scheme-colors div{
   margin-bottom: 10px;
+<<<<<<< HEAD
   height: 50px;
   border-radius: 10px;
 }
@@ -138,10 +164,39 @@ input {
   cursor: pointer;
   font-size: 16px;
   user-select: none;
+=======
+  height: 30px;
+  border-radius: 10px;
+}
+
+#color-scheme-options{
+  text-align: left;
+  margin-left: 20px;
+}
+
+.radio-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  user-select: none;
+  border: 2px solid #eee; /* Default non-selected border */
+  border-radius: 20px;
+  background-color: white; /* Default non-selected background */
+  transition: background-color 0.3s, border-color 0.3s;
+  text-align: center; /* Center the text inside the label */
+}
+
+.radio-button:hover {
+  border-color: #ccc;
+>>>>>>> ec43d04 (update)
 }
 
 .radio-button input {
   position: absolute;
+<<<<<<< HEAD
   opacity: 0;
   cursor: pointer;
 }
@@ -181,4 +236,15 @@ input {
   height: 8px;
   border-radius: 50%;
   background: white;
+=======
+  opacity: 0; /* Hide the radio input */
+  cursor: pointer;
+}
+
+/* Change the appearance of the label when the radio button is checked */
+.radio-button input:checked + label {
+  background-color: #2196F3; /* Selected background */
+  color: white; /* Selected text color */
+  border: 2px solid #2196F3; /* Selected border */
+>>>>>>> ec43d04 (update)
 }
