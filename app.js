@@ -2,8 +2,9 @@
 document.addEventListener("DOMContentLoaded", function() {
 
 
-    const apiKey = 'your own google api';
-    const cx = 'your own google cx';
+
+    const apiKey = 'AIzaSyDpExHj5sHv9ymM59FyvAcfMAFOD6zg3DA';
+    const cx = 'd1b64b6d5e05748cc';
 
     let currentColorScheme = 'complementary';
 
@@ -59,7 +60,6 @@ function generateSplitComplementaryColors(baseColor) {
   const splitComplementaryColors = [];
 
   splitComplementaryColors.push(chroma(baseColor));
-  splitComplementaryColors.push(chroma(baseColor).set('hsl.h', (baseColor.get('hsl.h') + 150) % 360));
   splitComplementaryColors.push(chroma(baseColor).set('hsl.h', (baseColor.get('hsl.h') + 210) % 360));
 
   console.log("split complimentary clicked");
@@ -70,7 +70,6 @@ function generateTriadicColors(baseColor) {
   const triadicColors = [];
 
   triadicColors.push(chroma(baseColor));
-  triadicColors.push(chroma(baseColor).set('hsl.h', (baseColor.get('hsl.h') + 120) % 360));
   triadicColors.push(chroma(baseColor).set('hsl.h', (baseColor.get('hsl.h') + 240) % 360));
   console.log("triadic clicked");
   return triadicColors;
